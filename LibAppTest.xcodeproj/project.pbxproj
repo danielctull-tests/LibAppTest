@@ -13,6 +13,9 @@
 		240689B815D8209D001ECA71 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 240689B615D8209D001ECA71 /* InfoPlist.strings */; };
 		240689BA15D8209D001ECA71 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 240689B915D8209D001ECA71 /* main.m */; };
 		240689BE15D8209D001ECA71 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 240689BD15D8209D001ECA71 /* AppDelegate.m */; };
+		240689D015D820D9001ECA71 /* libLibA.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 240689CD15D820D9001ECA71 /* libLibA.a */; };
+		240689D115D820D9001ECA71 /* libLibB.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 240689CE15D820D9001ECA71 /* libLibB.a */; };
+		240689D215D820D9001ECA71 /* libLibC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 240689CF15D820D9001ECA71 /* libLibC.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 		240689BB15D8209D001ECA71 /* LibAppTest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LibAppTest-Prefix.pch"; sourceTree = "<group>"; };
 		240689BC15D8209D001ECA71 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		240689BD15D8209D001ECA71 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		240689CD15D820D9001ECA71 /* libLibA.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libLibA.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		240689CE15D820D9001ECA71 /* libLibB.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libLibB.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		240689CF15D820D9001ECA71 /* libLibC.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libLibC.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +39,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				240689D015D820D9001ECA71 /* libLibA.a in Frameworks */,
+				240689D115D820D9001ECA71 /* libLibB.a in Frameworks */,
+				240689D215D820D9001ECA71 /* libLibC.a in Frameworks */,
 				240689AE15D8209D001ECA71 /* UIKit.framework in Frameworks */,
 				240689B015D8209D001ECA71 /* Foundation.framework in Frameworks */,
 				240689B215D8209D001ECA71 /* CoreGraphics.framework in Frameworks */,
@@ -62,6 +71,9 @@
 		240689AC15D8209D001ECA71 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				240689CD15D820D9001ECA71 /* libLibA.a */,
+				240689CE15D820D9001ECA71 /* libLibB.a */,
+				240689CF15D820D9001ECA71 /* libLibC.a */,
 				240689AD15D8209D001ECA71 /* UIKit.framework */,
 				240689AF15D8209D001ECA71 /* Foundation.framework */,
 				240689B115D8209D001ECA71 /* CoreGraphics.framework */,
@@ -224,6 +236,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LibAppTest/LibAppTest-Prefix.pch";
 				INFOPLIST_FILE = "LibAppTest/LibAppTest-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"/Volumes/RAM Disk/LibAppTest-dxfpfzdoghecmbbgmhajqrdibhez/Build/Products/Debug-iphoneos\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -235,6 +251,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LibAppTest/LibAppTest-Prefix.pch";
 				INFOPLIST_FILE = "LibAppTest/LibAppTest-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"/Volumes/RAM Disk/LibAppTest-dxfpfzdoghecmbbgmhajqrdibhez/Build/Products/Debug-iphoneos\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
